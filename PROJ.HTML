@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Survey Form</title>
+  <style>
+ 
+    body {
+      font-family: Arial, sans-serif;
+      background-color: antiquewhite;
+    }
+    
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .form-group select {
+      height: 34px;
+    }
+     
+     .form-group .checkbox-group label {
+      display:inline-block;
+      margin-right: 10px;
+    } 
+    
+    .submit-btn {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 111px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Survey Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="role">Current Role:</label>
+        <select id="role" name="role">
+          <option value="student">Student</option>
+          <option value="employee">Employee</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="recommend">How likely is it that you would recommend this course to your friend?</label>
+        <div class="checkbox-group">
+          <label><input type="radio" name="recommend" value="definitely">Definitely</label>
+          <label><input type="radio" name="recommend" value="not-sure">Not Sure</label>
+          <label><input type="radio" name="recommend" value="maybe">Maybe</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="likes">What do you like most in the course?</label>
+        <select id="likes" name="likes">
+          <option value="Everything">Everything</option>
+          <option value="Teaching">Teaching</option>
+          <option value="Content">Content</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="improvements">Things that should be improved in the future (check all that apply*):</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="improvements" value="frontend-project">Frontend-project</label>
+          <label><input type="checkbox" name="improvements" value="backend-project">Backend-project</label>
+          <label><input type="checkbox" name="improvements" value="quizzes"> Data visualization</label>
+
+        </div>
+      </div>
+       <button type="reset" class="submit-btn">Reset</button>
+      <button type="submit" class="submit-btn">Submit</button>
+     
+
+    </form>
+  </div>
+</body>
+</html>
